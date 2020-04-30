@@ -10,8 +10,8 @@ namespace AspNetCoreWebServiceTest.Controllers
         {
             HelloController controller = new HelloController();
             var response = controller.Get().Value as Response;
-            Assert.Equal("Hello World1234", "Hello World123");
-			
+            /*Assert.Equal("Hello World!!!!", response.Output);*/
+			Assert.True("Hello World!!!!!" == response.Output);
         }
 
         [Theory]
@@ -30,7 +30,7 @@ namespace AspNetCoreWebServiceTest.Controllers
         {
             HelloController controller = new HelloController();
             var response = controller.Post().Value as Response;
-            Assert.Equal("Hello World!!!!", response.Output);
+            Assert.Equal("Hello World!", response.Output);
         }
 
         [Theory]
