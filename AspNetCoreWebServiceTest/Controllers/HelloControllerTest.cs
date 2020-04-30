@@ -9,7 +9,7 @@ namespace AspNetCoreWebServiceTest.Controllers
         public void NoInputParamGetResponseTest()
         {
             HelloController controller = new HelloController();
-            string response = controller.Get().Value as Response;
+            String response = controller.Get().Value as Response;
             Assert.True(1 > 2);
         }
 
